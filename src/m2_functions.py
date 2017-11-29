@@ -282,7 +282,8 @@ def turtle5():
 #  you have tested it and believe that it is correct.
 #
 #   Reminder of those steps...
-#   COMMIT your work by selecting VCS from the menu bar, then select Commit Changes
+#   COMMIT your work by selecting VCS from the menu bar, then select Commit
+#    Changes
 #   Make sure only the files you want to commit are checked and optionally
 #   add a quick Commit message to describe your work.  Then hover over the
 #   Commit button and select Commit and Push.  Commit saves the work to
