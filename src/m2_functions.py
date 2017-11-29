@@ -34,6 +34,7 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle5()
     turtle4()
     turtle3()
     turtle2()
@@ -107,8 +108,7 @@ def turtle3():
 def turtle4():
     """
     Constructs a default SimpleTurtle.
-    Makes that SimpleTurtle go forward 300 units
-    and then draw a black-filled circle.
+    Makes a group of circles.
     """
     blob = rg.SimpleTurtle('triangle')
     blob.pen = rg.Pen('green', 7)
@@ -127,6 +127,44 @@ def turtle4():
     blob.draw_circle(90)
     blob.draw_circle(100)
     blob.end_fill()
+
+
+def turtle5():
+    """
+    Constructs a default SimpleTurtle.
+    Makes that SimpleTurtle make a filed square after moving
+    """
+    cat = rg.SimpleTurtle('classic')
+    cat.pen = rg.Pen('orange', 7)
+
+    cat.pen_up()
+    cat.left(90)
+    cat.forward(100)
+    cat.pen_down()
+
+    cat.paint_bucket = rg.PaintBucket('light blue')
+
+    cat.begin_fill()
+    cat.draw_square(45)
+    cat.end_fill()
+
+    # Constructs a default SimpleTurtle.
+    # Makes that SimpleTurtle make a filed quare after moving
+
+    blob2 = rg.SimpleTurtle('blank')
+    blob2.pen = rg.Pen('blue', 6)
+
+    blob2.pen_up()
+    blob2.left(180)
+    blob2.forward(100)
+    blob2.pen_down()
+
+    blob2.paint_bucket = rg.PaintBucket('gold')
+
+    blob2.begin_fill()
+    blob2.draw_circle(50)
+
+    blob2.end_fill()
 
 
 ########################################################################
@@ -217,7 +255,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE 5
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
