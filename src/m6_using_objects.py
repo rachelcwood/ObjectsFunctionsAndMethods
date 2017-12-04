@@ -33,7 +33,9 @@ def two_circles():
     # Put a statement in   main   to test this function
     #    (by calling this function).
     # ------------------------------------------------------------------
-    twocirc=rg.RoseWindow
+    window = rg.RoseWindow()
+    twocirc=rg.SimpleTurtle
+    twocirc.draw_circle(50)
 
 
 
