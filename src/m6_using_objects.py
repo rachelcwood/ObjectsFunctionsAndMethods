@@ -33,6 +33,8 @@ def two_circles():
     # Put a statement in   main   to test this function
     #    (by calling this function).
     # ------------------------------------------------------------------
+    twocirc=rg.RoseWindow
+
 
 
 def circle_and_rectangle():

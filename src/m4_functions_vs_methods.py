@@ -82,6 +82,7 @@ def main():
     turtle3()
     try_methods()
     try_functions()
+    try_methods_and_functions()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -259,21 +260,26 @@ def try_methods_and_functions():
     ####################################################################
     tryboth = rg.SimpleTurtle()
     tryboth.speed = 1
+    tryboth.pen = rg.Pen('blue', 5)
     draw_many_squares(tryboth, 2, 100, 30)
 
     tryboth.speed = 5
-    tryboth.pen = rg.Pen('red')
+    tryboth.pen.color = 'red'
     draw_many_squares(tryboth, 10, 50, 15)
 
-    maja.pen = rg.Pen('green', 10)
-    maja.paint_bucket = rg.PaintBucket('black')
+    tryboth.speed = 100
+    tryboth.pen.thickness = 35
+    draw_many_squares(tryboth, 8, 300, 60)
 
-    maja.right(135)
-    maja.forward(300)
+    tryboth.pen = rg.Pen('black', 3)
 
-    maja.begin_fill()
-    maja.draw_circle(50)
-    maja.end_fill()
+    tryboth.backward(200)
+
+    tryboth.draw_circle(30)
+
+    # I didn't bother using draw_many squares for this since it is only one.
+    tryboth.draw_square(50)
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
