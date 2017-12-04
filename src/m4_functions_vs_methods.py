@@ -177,7 +177,7 @@ def try_methods():
     # DONE 3
     #   Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
-    #    (by calling this function).
+    #    (by calling this function)..
     ####################################################################
     trym = rg.SimpleTurtle()
     trym.pen = rg.Pen('brown', 5)
